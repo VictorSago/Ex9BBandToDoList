@@ -1,4 +1,12 @@
 
+.task-input {
+  width: 75%;
+}
+
+.addbutton {
+  width: 20%;
+}
+
 .outputtext {
   background: #e0e8f0;
 }

@@ -19,6 +19,6 @@ function BishBosh2() {
         }
         outputText += ', ';
     }
-    console.log(outputText);
+    // console.log(outputText);
     outputField.innerText = outputText.slice(0, -2);
 }
