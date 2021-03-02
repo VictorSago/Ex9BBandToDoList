@@ -2,6 +2,15 @@
 // Add EventListener to the Add button
 document.querySelector('#add-btn').addEventListener("click", AddTask);
 
+// Let 'Enter' in the Input field act as the 'Add' button
+const addForm = document.querySelector('#add-form')
+addForm.addEventListener('submit', event => {
+    event.preventDefault();
+    AddTask();
+    // addForm.reset();
+  })
+
+
 // Let each task item have the ability to be marked by a click
 let tdList = document.querySelector('#td-list');
 tdList.addEventListener('click', MarkChecked, false);
@@ -12,7 +21,6 @@ for (const element of closeButtons) {
     element.addEventListener('click', RemoveItem);
 }
 
-// console.log(typeof(closeButtons), closeButtons);
 
 // Toggle marking of list items as "Complete"
 function MarkChecked(event) {
@@ -23,7 +31,13 @@ function MarkChecked(event) {
 
 // Add new List item
 function AddTask() {
-    let taskEntry = document.querySelector('#td-task').value;
+    let taskEntry = document.querySelector('#td-task').value.trim();
+
+    // See if there is any reasonable string value in the input field
+    if (!taskEntry) {
+        return;
+    }
+
     let tdItem = document.createElement("li");
     let tdText = document.createTextNode(taskEntry);
     tdItem.appendChild(tdText);

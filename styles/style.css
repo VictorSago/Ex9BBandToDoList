@@ -1,4 +1,9 @@
 
+/* Stretch the list to full width*/
+ul {
+  width: 100%;
+}
+
 /* Give list items backgrounds and positions */
 ul li {
   cursor: pointer;
