@@ -7,6 +7,10 @@
   width: 20%;
 }
 
+.task-list {
+  list-style: none;
+}
+
 .outputtext {
   background: #e0e8f0;
 }
