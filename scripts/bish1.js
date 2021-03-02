@@ -1,4 +1,4 @@
-let output_area = document.querySelector('#output-area');
+const output_area = document.querySelector('#output-area');
 log_message = BishBosh1();
 
 console.log(log_message);

@@ -1,4 +1,9 @@
 
+footer > div {
+  overflow: hidden;
+  text-align: right;
+}
+
 /* Stretch the list to full width*/
 ul {
   width: 100%;
@@ -52,5 +57,8 @@ ul li.checked {
   color: white;
 }
 
+.footer {
+  background-color: #f5f5f5;
+}
 
 
