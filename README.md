@@ -10,4 +10,4 @@ A variation on the classical Fizz-Buzz exercise with the option of choosing the 
 
 ### Part 2 of Exercise 9 in Lexicon's .NET course
 
-***UNFINISHED***
+A simple ToDo List with vanilla JavaScript and Bootstrap4.
