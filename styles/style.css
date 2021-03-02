@@ -1,4 +1,24 @@
 
+/* Give list items backgrounds and positions */
+ul li {
+  cursor: pointer;
+  position: relative;
+  background: #f0f0f0;
+  transition: 0.2s;
+}
+
+/* Alternating colours on list items */
+ul li:nth-child(odd) {
+  background: #f8f8f8;
+}
+
+/* Mark list items as complete */
+ul li.checked {
+  background: #888;
+  color: #fff;
+  text-decoration: line-through;
+}
+
 .task-input {
   width: 75%;
 }
@@ -14,3 +34,18 @@
 .outputtext {
   background: #e0e8f0;
 }
+
+.closeBtn {
+  /* position: absolute; */
+  float: right;
+  right: 0;
+  top: 0;
+}
+
+.closeBtn:hover {
+  background-color: #f05070;
+  color: white;
+}
+
+
+
